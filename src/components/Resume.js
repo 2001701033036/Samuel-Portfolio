@@ -4,7 +4,7 @@ import { fadeIn } from "../varients";
 export default function Resume() {
     const [hasAnimated,setHasAnimated]=useState(false); //track animation state
     const config = {
-        link: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+        link: 'https://drive.google.com/file/d/1ImHqFXZVcj3IgPX4QAWsOc6wEvNRoti2/view'
     }
     const config1 = {
         Experience: [

@@ -32,7 +32,7 @@ export default function Contact() {
                 icon: <TbWorldDownload size={30} />,
                 heading: 'DOWNLOAD RESUME',
                 description: 'Samuel-Resume',
-                link: ''
+                link: 'https://drive.google.com/file/d/1ImHqFXZVcj3IgPX4QAWsOc6wEvNRoti2/view'
             }
 
         ]

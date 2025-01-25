@@ -86,7 +86,7 @@ export default function Profile() {
             <img 
             src={HeroImg} 
             alt="profile" 
-            className=" w-56 h-72 rounded-full object-cover "/>
+            className=" w-60  h-72 rounded-full object-cover "/>
             
              </motion.div>
            

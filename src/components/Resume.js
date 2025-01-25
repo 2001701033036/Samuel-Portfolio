@@ -128,7 +128,7 @@ enhancing operational efficiency and user experience in healthcare technology.
                 }
             }}
             viewport={{once:true,  amount:0.7}}
-            className='pb-5 justify-center text-center' ><a className='btn text-neutral-800' target="_blank" href={config.link}>Download CV</a></motion.p>
+            className='pb-5 justify-center text-center' ><a className='btn text-neutral-800' target="_blank" rel="noopener noreferrer" href={config.link}>Download CV</a></motion.p>
         </div>
     </section>
 }

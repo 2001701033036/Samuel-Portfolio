@@ -1,4 +1,3 @@
-import ResumeImg from '../Asset/friend.jpg';
 import { FaPhoneAlt, FaRegAddressCard } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import { TbWorldDownload } from "react-icons/tb";

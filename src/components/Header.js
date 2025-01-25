@@ -36,7 +36,7 @@ export default function Header() {
    const [toggleMenu, setToggleMenu] = useState(false)
 
    return <header className="flex justify-between px-5 w-full fixed py-3 m-h:100vh bg-black z-50">
-      <a className="font-bold text-2xl  text-white" href="#">Samuel G</a>
+      <a href="header" className="font-bold text-2xl  text-white" >Samuel G</a>
       <nav className="hidden md:block">
          <ul className="flex text-white nav-head ">
 

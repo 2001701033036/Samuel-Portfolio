@@ -64,7 +64,7 @@ export default function Projects() {
                         }}
                         viewport={{ once: true, amount: 0.7 }} // Trigger animation only once when 70% is in view
                         className='relative'>
-                        <img className='h-[200px] w-[500px]' src={project.image} />
+                        <img  alt='' className='h-[200px] w-[500px]' src={project.image} />
                         <div className='project-desc'>
                             <p className='text-center py-5 px-5'>{project.description}</p>
                             <div className='flex justify-center'>

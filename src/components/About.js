@@ -9,9 +9,8 @@ export default function About() {
 
 
     const config = {
-        line1: 'Hi, I’m Samuel G, and I’m a Junior App Executive in the hospital sector. My role involves assisting patients in navigating and using the hospital’s mobile app, ensuring a smooth user experience, troubleshooting issues. I collaborate with departments such as Billing, Accounts, and Reception to ensure the app integrates seamlessly into daily hospital operations.',
-        line2: 'I actively engage in project discussions with the CEO and IT Manager, helping gather and analyze requirements from healthcare professionals. Additionally, I conduct User Acceptance Testing (UAT) and collaborate with app developers to improve app functionality and address any technical issues.',
-        line3: 'I am skilled in Figma, which I use to design templates, flow charts, and wireframes for new projects, ensuring they align with user needs and project goals. As I continue to grow in my role, I’m excited to explore more opportunities in the intersection of healthcare and technology'
+        line1: 'As a Junior App Executive in the healthcare sector, I specialize in enhancing user experiences by assisting patients with navigating hospital mobile apps and resolving technical issues. I collaborate closely with multiple departments, including Billing, Accounts, and Reception, to ensure seamless app integration. With expertise in Figma, I design user-centric templates, wireframes, and flow charts for new projects. Im passionate about leveraging technology to improve healthcare operations and am eager to contribute to impactful innovations in this space.',
+        
 
     }
     const config1 = {

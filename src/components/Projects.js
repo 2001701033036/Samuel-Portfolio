@@ -74,7 +74,7 @@ export default function Projects() {
 
                             <div className='flex justify-center py-4'>
                                 <button className=" rounded-md  w-[110px] h-[44px] bg-gradient-to-b from-green-500 to-green-700 text-white font-semibold  relative group overflow-clip transition-all hover:scale-105">
-            <a className=" w-full h-full flex flex-col justify-center" target="_blank" href={project.link}>view project</a>
+            <a className=" w-full h-full flex flex-col justify-center" target="_blank" rel="noreferrer" href={project.link}>view project</a>
             <div className="transition-all ease-out bg-cyan-900 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-44">
             </div>
             </button>

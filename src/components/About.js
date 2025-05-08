@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../varients";
-import AboutImg from '../Asset/ab.png';
+import AboutImg from '../Asset/lig.png';
 
 export default function About() {
     const [hasAnimated, setHasAnimated] = useState(false); // Track animation state
@@ -9,7 +9,7 @@ export default function About() {
 
 
     const config = {
-        line1: 'As a Junior App Executive in the healthcare sector, I specialize in enhancing user experiences by assisting patients with navigating hospital mobile apps and resolving technical issues. I collaborate closely with multiple departments, including Billing, Accounts, and Reception, to ensure seamless app integration. With expertise in Figma, I design user-centric templates, wireframes, and flow charts for new projects. Im passionate about leveraging technology to improve healthcare operations and am eager to contribute to impactful innovations in this space.',
+        line1: 'IT Executive with over a year of experience in app development, user experience optimization, and technical support within the healthcare sector. Proficient in ReactJS, Tailwind CSS, and Figma, I focus on enhancing digital experiences and troubleshooting technical issues. A motivated and adaptable team player, I’m eager to learn new technologies and contribute to impactful innovations in the intersection of healthcare and IT. Always ready to embrace new challenges, I thrive in dynamic and evolving environments.',
         
 
     }
@@ -42,11 +42,13 @@ export default function About() {
 
         ]
     }
-    return <section className='flex flex-col md:flex-row justify-center px-5 md:py-11 bg-black ' id='about'>
-
+    return <section className='bg-black flex flex-col md:flex-row justify-center scroll-mt-14  px-5 space-y-40 md:space-y-0 md:py-11 ' 
+    id='about'>
+       <div className=" flex">
+       <div className="md:w-[700px] ">
         <motion.img
             src={AboutImg}
-            className='py-8 px-8  h-80 w-80 rounded-full object-cover pt-20   '
+            className=' hidden md:block  w-[600px] items-center justify-center rounded-b-3xl object-contain'
             variants={fadeIn("right", 0.2)} // Change direction based on scroll direction (down)
             initial="hidden"
             whileInView="show" // Trigger animation when the element comes into the viewport
@@ -57,11 +59,12 @@ export default function About() {
             }}
             viewport={{ once: true, amount: 0.7 }} // Trigger animation only once when 70% is in view
         />
-        <div>
+        </div>
+         
 
 
-        <div className='' >
-        <h1 className='text-5xl border-b-4 border-yellow-400  m-auto md:ml-8 md:m-5 text-white  md:w-[230px] w-[210px] font-bold'>About Me</h1>
+        <div className=' text-center items-center container' >
+        <h1 className='text-5xl border-b-4 border-green-400  m-auto md:ml-8 md:m-5 text-white  md:w-[230px] w-[210px] font-bold'>About Me</h1>
 
             <motion.div
                 variants={fadeIn("up", 0.1)} // Change direction based on scroll direction (down)
@@ -73,10 +76,15 @@ export default function About() {
                     }
                 }}
                 viewport={{ once: true, amount: 0.7 }} // Trigger animation only once when 70% is in view
-                className='flex flex-col md:px-9 md:text-balance py-5  text-white'>
+                className=' flex-col  md:px-9 py-5 text-white'>
 
-                <p className='pb-5 text-lg  text-gray-400'>{config.line1}</p>
-                {/* <p className='pb-5'>{config.line2}</p>
+                {/* <p className='pb-5 text-lg  text-gray-400 text-start md:text-justify'>{config.line1}</p> */}
+<div className="md:w-[700px]">
+    
+    
+<p className='pb-5 text-lg  text-gray-400 text-start md:text-justify'>{config.line1}</p>
+    
+    </div>                {/* <p className='pb-5'>{config.line2}</p>
                 <p className='pb-5'>{config.line3}</p> */}
                 {
                     config1.about.map((about) => (
@@ -88,18 +96,11 @@ export default function About() {
                             </div>
 
                         </div>
-
-
-
                     ))}
-
-
-
             </motion.div>
-        </div>
-
-        </div>
-
+        
+            </div>
+       </div>
     </section>
 
 }

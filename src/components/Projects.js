@@ -1,35 +1,38 @@
 import { motion } from "framer-motion"
 import { useState } from "react";
 import { fadeIn } from "../varients"
-import websiteImg1 from '../Asset/project1.jpg';
-import websiteImg2 from '../Asset/project2.jpg';
-import websiteImg3 from '../Asset/project1.jpg';
+import websiteImg1 from '../Asset/bb4.png';
+import websiteImg2 from '../Asset/ecom.png';
+import websiteImg3 from '../Asset/ui2.png';
 export default function Projects() {
     const [hasAnimated, setHasAnimated] = useState(false);
     const config = {
         projects: [
             {
                 image: websiteImg1,
-                description: 'A Ecommerce website build with MERN stack.',
-                link: 'http://www.github.com'
+                heading: 'Blood Bank Portal (ASP.NET using C#)',
+                description:'A web-based application designed to streamline blood donation, enabling users to search for and manage blood stock efficiently',
+                link: 'https://github.com/2001701033036/Blood-Connect.git'
             },
             {
                 image: websiteImg2,
-                description: 'A Ecommerce website build with MERN stack.',
-                link: ''
+                heading: 'E-Commerce(ReactJS, Node.js)',
+                description:' e-commerce website where users can browse products, add items to their cart, and simulate the buying process with a seamless user experience ',
+                link: 'https://github.com/2001701033036/ecom.git'
             },
             {
                 image: websiteImg3,
-                description: 'A Ecommerce website build with MERN stack.',
-                link: '',
+                heading: 'Design using in figma.',
+                description:'Intuitive IVF app & dashboard for fertility tracking with clear visuals, and a clean, user-friendly Ocean Taste food delivery app for seamless meal ordering.',
+                link: 'https://www.figma.com/proto/hnwlcqlPfNOzO9ZJh7EeSI/Ocean-Taste?node-id=958-171&t=sOeWRPb6ZulPnJAy-1',
             }
         ]
 
     }
 
-    return <section id='project' className="flex flex-col py-14 md:px-5 justify-center bg-black text-white ">
+    return <section id='project' className="flex flex-col py-14 md:px-5 justify-center bg-black text-white md:pb-28  ">
         <div className="w-full ">
-        <h1 className='text-5xl border-b-4 text-white border-yellow-400 mb-5 w-[184px] m-auto font-bold'>Projects</h1>
+        <h1 className='text-5xl border-b-4 text-white border-green-400 mb-5 w-[184px] m-auto font-bold'>Projects</h1>
 
             <motion.div
                  variants={fadeIn ("down",0.2)}//change the direction based on the scroll
@@ -42,14 +45,14 @@ export default function Projects() {
                  }}
                  viewport={{once:true,  amount:0.7}}
                 className="flex px-10 py-5 flex-col text-center items-center">
-                <p className="text-neutral-500">These are some of my project.I have built these with React,MERN and Tailwind CSS.Check them out.</p>
+                <p className="text-neutral-500">Below are the sample projects on ASP.NET, C#, ReactJS, Node.js, and MongoDB,.</p>
             </motion.div>
         </div>
 
         <div className="w-full">
             <div
 
-                className='flex flex-col md:flex-row px-10 gap-5 justify-center'>
+                className='flex flex-col md:flex-row px-10 gap-9 justify-center '>
 
                 {config.projects.map((project) => (
 
@@ -63,14 +66,20 @@ export default function Projects() {
                             }
                         }}
                         viewport={{ once: true, amount: 0.7 }} // Trigger animation only once when 70% is in view
-                        className='relative'>
-                        <img  alt='' className='h-[200px] w-[500px]' src={project.image} />
-                        <div className='project-desc'>
-                            <p className='text-center py-5 px-5'>{project.description}</p>
-                            <div className='flex justify-center'>
-                                <a className='btn text-neutral-800' target='blank' href={project.link}>view project</a>
+                        className='relative  '>
+                        <img  alt='' className='h-[220px] w-[500px] ' src={project.image} />
+                        <div className='project-desc  '>
+                            <p className='text-center py-5 px-5'>{project.heading}</p>
+                            <p className='text-balance text-center text-sm'>{project.description}</p>
+
+                            <div className='flex justify-center py-4'>
+                                <button className=" rounded-md  w-[110px] h-[44px] bg-gradient-to-b from-green-500 to-green-700 text-white font-semibold  relative group overflow-clip transition-all hover:scale-105">
+            <a className=" w-full h-full flex flex-col justify-center" target="_blank" href={project.link}>view project</a>
+            <div className="transition-all ease-out bg-cyan-900 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-44">
+            </div>
+            </button>
                             </div>
-                        </div>
+                        </div>  
                     </motion.div>
 
                 ))}

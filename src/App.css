@@ -24,8 +24,10 @@ header ul li{
   @apply  max-w-xs transition duration-300 ease-in-out transform hover:scale-110 border-transparent   hover:font-bold    mx-0.5 px-1   ;
 }
 .btn{
-  @apply bg-yellow-300 px-5 py-3 font-bold hover:border-2 border-white rounded;
+  @apply bg-yellow-300 px-5 py-3 font-bold hover:border-2 border-white rounded ;
 }
+
+
 
 html{
   scroll-behavior: smooth;

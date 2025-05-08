@@ -35,16 +35,17 @@ export default function Header() {
    }, []);
    const [toggleMenu, setToggleMenu] = useState(false)
 
-   return <header className="flex justify-between px-5 w-full fixed py-3 m-h:100vh bg-black z-50">
-      <a href="header" className="font-bold text-2xl  text-white" >Samuel G</a>
+   return <section className="flex md:flex-row justify-between  px-5 fixed py-3 m-h:100vh bg-black z-50 w-screen">
+      
+      <a href="#" className="font-bold text-2xl  text-white" >Samuel G</a>
       <nav className="hidden md:block">
          <ul className="flex text-white nav-head ">
 
             <li>
                <a
-                  href="#profile"
-                  className={`${activeLink === "profile" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  href="#"
+                  className={`${activeLink === "profile" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("profile")}
                >
                   Home
@@ -53,8 +54,8 @@ export default function Header() {
             <li>
                <a
                   href="#about"
-                  className={`${activeLink === "about" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out  transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "about" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out  transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("about")}
                >
                   About
@@ -63,8 +64,8 @@ export default function Header() {
             <li>
                <a
                   href="#resume"
-                  className={`${activeLink === "resume" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out  transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "resume" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out  transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("resume")}
                >
                   Resume
@@ -74,8 +75,8 @@ export default function Header() {
             <li>
                <a
                   href="#project"
-                  className={`${activeLink === "project" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "project" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("project")}
                >
                   Project
@@ -84,8 +85,8 @@ export default function Header() {
             <li>
                <a
                   href="#contact"
-                  className={`${activeLink === "contact" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "contact" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("contact")}
                >
                   Contact
@@ -99,8 +100,8 @@ export default function Header() {
             <li>
                <a
                   href="#profile"
-                  className={`${activeLink === "profile" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "profile" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("profile")}
                >
                   Home
@@ -109,8 +110,8 @@ export default function Header() {
             <li>
                <a
                   href="#about"
-                  className={`${activeLink === "about" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "about" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("about")}
                >
                   About
@@ -119,8 +120,8 @@ export default function Header() {
             <li>
                <a
                   href="#resume"
-                  className={`${activeLink === "resume" ? "text-yellow-500 font-bold border-b-2  border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "resume" ? "text-green-500 font-bold border-b-2  border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("resume")}
                >
                   Resume
@@ -130,8 +131,8 @@ export default function Header() {
             <li>
                <a
                   href="#project"
-                  className={`${activeLink === "project" ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "project" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("project")}
                >
                   Project
@@ -140,8 +141,8 @@ export default function Header() {
             <li>
                <a
                   href="#contact"
-                  className={`${activeLink === "contact" ? "text-yellow-500 font-bold border-b-2  border-yellow-500" : ""
-                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-yellow-500 px-2`}
+                  className={`${activeLink === "contact" ? "text-green-500 font-bold border-b-2  border-green-500" : ""
+                     } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("contact")}
                >
                   Contact
@@ -150,5 +151,5 @@ export default function Header() {
          </ul>
       </nav>}
       <button onClick={() => setToggleMenu(!toggleMenu)} className='block md:hidden '><Bars3Icon className='text-white h-5' /></button>
-   </header>
+   </section>
 }

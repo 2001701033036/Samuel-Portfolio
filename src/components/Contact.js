@@ -12,7 +12,7 @@ export default function Contact() {
         contact: [
             {
                 icon: <FaRegAddressCard size={30} />,
-                heading: 'Address',
+                heading: 'ADDRESS',
                 description: 'TamilNadu,India',
 
             },
@@ -37,10 +37,10 @@ export default function Contact() {
 
         ]
     }
-    return <section id='contact' className='flex flex-col   bg-black px-5 py-44'>
+    return <section id='contact' className='flex flex-col   bg-black px-5 md:py-0 pt-20 md:pt-20'>
 
         <div className=' flex flex-col text-center pl-5 pr-5'>
-            <h1 className=' flex flex-col text-5xl border-b-4 border-yellow-300  w-[260px]  m-auto font-bold items-center   text-white'>Contact Me</h1>
+            <h1 className=' flex flex-col text-5xl border-b-4 border-green-400  w-[260px]  m-auto font-bold items-center   text-white'>Contact Me</h1>
             <p className='text-neutral-500 py-3'>Below are the details reach out to me!</p>
 
             <div className='flex  flex-col  gap-16 md:flex-row  md:gap-32  justify-center py-24'>
@@ -62,7 +62,7 @@ export default function Contact() {
                             viewport={{ once: true, amount: 0.7 }} // Trigger animation only once when 70% is in view
 
                             className=' flex h-24 w-24 rounded-full bg-neutral-800 flex-col'>
-                            <p className=' p-8 text-yellow-500'>{contact.icon}</p>
+                            <p className=' p-8 text-green-400'>{contact.icon}</p>
                         </motion.div>
 
                         <p className='text-white text-lg font-bold'>{contact.heading}</p>

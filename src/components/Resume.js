@@ -7,14 +7,14 @@ export default function Resume() {
         link: 'https://drive.google.com/file/d/1ImHqFXZVcj3IgPX4QAWsOc6wEvNRoti2/view'
     }
     const config1 = {
-        Experience: [
+        Experience: [   
             {
                 date: 'JAN 2024-Present',
                 designation: 'IT Executive',
                 companyname: 'Prashanth Hospital',
-                line1: 'Hi, I’m Samuel G, and I’m a Junior App Executive in the hospital sector. My role involves assisting patients in navigating and using the hospital’s mobile app, troubleshooting issues, and ensuring a smooth user experience. I collaborate with departments such as Billing, Accounts, and Reception to ensure the app integrates seamlessly into daily hospital operations.',
-                line2: 'I actively engage in project discussions with the CEO and IT Manager, helping gather and analyze requirements from healthcare professionals. Additionally, I conduct User Acceptance Testing (UAT) and collaborate with app developers to improve app functionality and address any technical issues.',
-                line3: 'I am skilled in Figma, which I use to design templates, flow charts, and wireframes for new projects, ensuring they align with user needs and project goals. As I continue to grow in my role, I’m excited to explore more opportunities in the intersection of healthcare and technology'
+                line1: 'User-Centric Development: Conduct User Acceptance Testing (UAT) to ensure the app meets user needs, offering feedback and collaborating closely with developers to improve features and resolve technical problems.',
+                line2: 'Design & Prototyping: Utilize tools like Figma to create user-friendly templates, wireframes, and flow charts that guide the development of new app features and ensure they align with user goals and hospital objectives.',
+                line3: 'App Promotion Website: Designed and developed an app promotion website using ReactJS and Tailwind CSS. The site serves as a key marketing tool to promote the hospital’s mobile app, providing users with information about app features, benefits, and installation instructions.'
             }
         ]
     }
@@ -22,21 +22,21 @@ export default function Resume() {
         Education: [
             {
                 date: '2020-2023',
-                degree: 'Bachelor of computer Application',
+                degree: 'Bachelor of Computer Application',
                 schoolcollege: 'MADRAS CHRISTIAN COLLEGE,CHENNAI'
             },
             {
                 date: '2018-2020',
                 degree: 'Higher Secondary School',
-                schoolcollege: 'ST.ANNES MATRUCULATION, RAMANATHAPURAM'
+                schoolcollege: 'ST.ANNES MATRICULATION, RAMANATHAPURAM'
 
             }
         ]
     }
-    return <section id='resume' className='flex flex-col md:flex-row px-5 py-20 bg-black justify-center '>
+    return <section id='resume' className='flex flex-col md:flex-row px-5 py-20 bg-black justify-center  '>
 
         <div className='flex flex-col items-center  '>
-        <h1 className='text-5xl font-bold border-b-4 border-yellow-400 text-white'>Resume</h1>
+        <h1 className='text-5xl font-bold border-b-4 border-green-400 text-white'>Resume</h1>
 
             <motion.div 
             variants={fadeIn ("up",0.2)}//change the direction based on the scroll
@@ -57,9 +57,9 @@ enhancing operational efficiency and user experience in healthcare technology.
                 </p>
             </motion.div>
             <br></br>
-            <div className='md:flex-col items-center border-b-4  md:w-1/2 w-full border-yellow-200 '>
+            <div className='md:flex-col items-center border-b-4  md:w-1/2 w-full border-green-200 '>
                 <h1 className=' text-5xl flex flex-col   items-center py-1  text-white'>Experience<span className=""></span></h1>
-                <div className=' '>
+                <div className='md:px-44 '>
 
                 </div>
             </div>
@@ -68,9 +68,9 @@ enhancing operational efficiency and user experience in healthcare technology.
 
                 <div
                 
-                className='flex flex-col md:w-1/2 p-12 rounded-md gap-4 px-1 pl-5 md:px-10 bg-neutral-900 text-white ' >
+                className='flex flex-col p-12 rounded-md gap-4 px-1 pl-5 md:w-[600px]  md:p-10 bg-neutral-900 text-white ' >
 
-                    <h1 className='text-3xl font-bold text-yellow-300' >{Experience.date}</h1>
+                    <h1 className='text-3xl font-bold text-green-300' >{Experience.date}</h1>
                     <h1 className=' text-3xl '>{Experience.designation}</h1>
                     <h1 className='text-xl text-gray-500 font-bold'>{Experience.companyname}</h1>
                     <ul className='list-disc text-lg text-gray-400'>
@@ -84,7 +84,7 @@ enhancing operational efficiency and user experience in healthcare technology.
             <br></br>
             <br></br>
             <br></br>
-            <div className=" border-b-4 md:w-4/5  border-yellow-200">
+            <div className=" border-b-4 md:w-1/2 w-[210px]  border-green-200">
 
                 <h1 className='text-5xl  text-white text-center border-yellow-200 justify-center items-center '>Education</h1>
                 <div className=' w-96 bg-yellow-200    '>
@@ -105,10 +105,10 @@ enhancing operational efficiency and user experience in healthcare technology.
                 }
             }}
             viewport={{once:true,  amount:0.7}}
-            className=' md:w-auto flex flex-col  md:flex-row gap-10 '>
+            className=' md:w-auto flex   flex-col  md:flex-row gap-10 '>
                 {config2.Education.map((Education) => (
-                    <div className='  md:w-1/2  p-10 rounded-md  bg-neutral-800 md:bg-neutral-900 py-5 pl-3  md:text-nowrap '>
-                        <h1 className='text-3xl font-bold text-yellow-300 mb-4'>{Education.date}</h1>
+                    <div className='  md:w-1/2   p-10 rounded-md  bg-neutral-800 md:bg-neutral-900 py-5 pl-3  md:text-nowrap '>
+                        <h1 className='text-3xl font-bold text-green-300 mb-4'>{Education.date}</h1>
                         <h1 className=' text-white text-3xl mb-4'>{Education.degree}</h1>
                         <p className=' text-gray-500 font-bold'>{Education.schoolcollege}</p>
                         <br></br>
@@ -128,7 +128,14 @@ enhancing operational efficiency and user experience in healthcare technology.
                 }
             }}
             viewport={{once:true,  amount:0.7}}
-            className='pb-5 justify-center text-center' ><a className='btn text-neutral-800' target="_blank" rel="noopener noreferrer" href={config.link}>Download CV</a></motion.p>
+            className='pb-5 justify-center text-center' >
+            <button className=" rounded-md  w-[150px] h-[44px] bg-gradient-to-b from-green-400 to-green-700 text-white font-semibold  relative group overflow-clip transition-all hover:scale-105">
+            <a className=" w-full h-full flex flex-col justify-center" target="_blank" href={config.link}>Download CV</a>
+            <div className="transition-all ease-out bg-cyan-900 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-44">
+            </div>
+           
+            </button>
+            </motion.p>
         </div>
     </section>
 }

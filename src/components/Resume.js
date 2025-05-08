@@ -130,7 +130,7 @@ enhancing operational efficiency and user experience in healthcare technology.
             viewport={{once:true,  amount:0.7}}
             className='pb-5 justify-center text-center' >
             <button className=" rounded-md  w-[150px] h-[44px] bg-gradient-to-b from-green-400 to-green-700 text-white font-semibold  relative group overflow-clip transition-all hover:scale-105">
-            <a className=" w-full h-full flex flex-col justify-center" target="_blank" href={config.link}>Download CV</a>
+            <a className=" w-full h-full flex flex-col justify-center" target="_blank" rel="noreferrer" href={config.link}>Download CV</a>
             <div className="transition-all ease-out bg-cyan-900 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-44">
             </div>
            

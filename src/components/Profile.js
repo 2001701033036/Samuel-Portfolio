@@ -21,7 +21,7 @@ export default function Profile() {
 
     return (
         <section
-            id="/"
+            id="home"
             className="flex flex-col md:flex-row md:items-center justify-center gap-16 px-5 bg-black  "
         >
             <div className="text-white"> 

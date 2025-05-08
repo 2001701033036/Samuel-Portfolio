@@ -37,13 +37,13 @@ export default function Header() {
 
    return <section className="flex md:flex-row justify-between  px-5 fixed py-3 m-h:100vh bg-black z-50 w-screen">
       
-      <a href="#" className="font-bold text-2xl  text-white" >Samuel G</a>
+      <a href="#home" className="font-bold text-2xl  text-white" >Samuel G</a>
       <nav className="hidden md:block">
          <ul className="flex text-white nav-head ">
 
             <li>
                <a
-                  href="#"
+                  href="#home"
                   className={`${activeLink === "profile" ? "text-green-500 font-bold border-b-2 border-green-500" : ""
                      } transition duration-300 ease-in-out transform hover:scale-110  hover:border-b-2 hover:border-green-500 px-2`}
                   onClick={() => handleClick("profile")}

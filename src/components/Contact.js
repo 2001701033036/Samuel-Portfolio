@@ -39,11 +39,11 @@ export default function Contact() {
     }
     return <section id='contact' className='flex flex-col   bg-black px-5 md:py-0 pt-20 md:pt-20'>
 
-        <div className=' flex flex-col text-center pl-5 pr-5'>
+        <div className=' flex flex-col text-center '>
             <h1 className=' flex flex-col text-5xl border-b-4 border-green-400  w-[260px]  m-auto font-bold items-center   text-white'>Contact Me</h1>
             <p className='text-neutral-500 py-3'>Below are the details reach out to me!</p>
 
-            <div className='flex  flex-col  gap-16 md:flex-row  md:gap-32  justify-center py-24'>
+            <div className='flex  flex-col  gap-16 md:flex-row  md:gap-20  justify-center py-24'>
 
                 {config.contact.map((contact) => (
                     <div

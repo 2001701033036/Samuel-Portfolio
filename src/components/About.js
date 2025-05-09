@@ -45,7 +45,7 @@ export default function About() {
     return <section className='bg-black flex flex-col md:flex-row justify-center scroll-mt-14  px-5 space-y-40 md:space-y-0 md:py-11 ' 
     id='about'>
        <div className=" flex">
-       <div className="md:w-[700px] ">
+       <div className=" ">
         <motion.img
             src={AboutImg}
             className=' hidden md:block  w-[600px] items-center justify-center rounded-b-3xl object-contain'

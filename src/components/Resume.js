@@ -33,7 +33,7 @@ export default function Resume() {
             }
         ]
     }
-    return <section id='resume' className='flex flex-col md:flex-row px-5 py-20 bg-black justify-center  '>
+    return <section id='resume' className='flex flex-col  md:flex-row px-5 py-20 bg-black justify-center  '>
 
         <div className='flex flex-col items-center  '>
         <h1 className='text-5xl font-bold border-b-4 border-green-400 text-white'>Resume</h1>
@@ -105,20 +105,22 @@ enhancing operational efficiency and user experience in healthcare technology.
                 }
             }}
             viewport={{once:true,  amount:0.7}}
-            className=' md:w-auto flex   flex-col  md:flex-row gap-10 '>
+            className=' md:w-auto flex   flex-col items-center justify-center md:flex-row gap-10 '>
                 {config2.Education.map((Education) => (
-                    <div className='  md:w-1/2   p-10 rounded-md  bg-neutral-800 md:bg-neutral-900 py-5 pl-3  md:text-nowrap '>
+                   <div className=" ">
+                     <div className=' md:w-auto  rounded-md  bg-neutral-800 md:bg-neutral-900 py-6 pl-5 p-5 '>
                         <h1 className='text-3xl font-bold text-green-300 mb-4'>{Education.date}</h1>
                         <h1 className=' text-white text-3xl mb-4'>{Education.degree}</h1>
                         <p className=' text-gray-500 font-bold'>{Education.schoolcollege}</p>
                         <br></br>
                     </div>
+                   </div>
                 ))}
             </motion.div>   
             <br></br>
             <br></br>
             
-            <motion.p 
+            <motion.p  
             variants={fadeIn ("up",0.2)}//change the direction based on the scroll
             initial="hidden"
             whileInView="show" //trigger the animation when the element comes in the viewport
